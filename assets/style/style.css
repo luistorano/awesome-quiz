@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Cuprum&family=Dongle&family=Zen+Kaku+Gothic+New&display=swap');
+
+/* General Styling */
+body {
+    font-family: 'Fira Mono', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    color: #000;
+    background: radial-gradient(circle, rgba(217,17,166,1) 0%, rgba(14,137,210,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Main Page Styling  */
+.intro {
+    text-align: center;
+}
+
+.form {
+    justify-content: center;
+    padding-left: 32%;
+    padding-right: 32%;
+}
+
+/* Question and Asnwers Styling */
+.qa_box {
+    width: 500px;
+    padding: 20px;
+    min-height: 100px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+.qa_header {
+    background-color: #0e89d2;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    margin: -20px -20px 20px;
+    border-radius: 15px 15px 0 0;
+    font-size: 20px;
+}
+
+.qa_set {
+    display: none;
+}
+
+.qa_set.active {
+    display: block;
+}
+
+.qa_set h4 {
+    margin: 0 0 15px;
+    font-size: 20px;
+}
+
+.qa_ans_row {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.qa_ans_row input {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.qa_ans_row span {
+    display: block;
+    padding: 8px 15px;
+    background-color: #bad0c9;
+    border-radius: 15px;
+    transition: all 0.3s ease-out;
+}
+
+.qa_ans_row:hover span {
+    background-color: #9ab5ac;
+}
+
+.qa_ans_row input:checked+span {
+    background-color: #f93c3c;
+}
+
+
+.qa_ans_row input[valid]:checked+span {
+    background-color: greenyellow;
+}
+
+.qa_footer {
+    padding: 10px 0 0;
+    text-align: right;
+}
+
+
+/* Button Styiling */
+.btn1 {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #d911a6;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.btn1:hover {
+    background-color: #064484;
+}
+
+#submit-btn {
+    align-items: center;
+    margin-left: 23%;
+}
+
+
+/* High Scores */
+.end-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 15px;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+#username {
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
+}
+
+#end-text {
+    font-size: 2.4rem;
+    color: #ffff;
+    text-align: center;
+}
+
+#saveScoreBtn {
+    border: none;
+}

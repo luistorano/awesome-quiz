@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+
+<body>
+    <!-- Quiz Body -->
+    <div class="qa_box">
+        <div class="qa_header">
+
+            <!-- Score Tracker -->
+            <span>Score: <span id="score">0</span></span>
+
+            <!-- Countdown Timer -->
+            <span id="countdown">0</span>
+        </div>
+
+        <!-- Question Section -->
+        <div class="qa_body">
+            
+            <!-- Question One -->
+            <div class="qa_set active">
+                <h4>Which one of these is an Array?</h4>
+                <!-- Answers -->
+                <div class="qa_ans_row">
+                    <input type="radio" name="a1"><span>var x = { }</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a1" valid="valid"><span>var x = [ ]</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a1"><span>var x = ( )</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a1"><span>var x = <> </span>
+                </div>
+            </div>
+
+            <!-- Question Two -->
+            <div class="qa_set">
+                <h4>Which one of these is a function?</h4>
+                <!-- Answers -->
+                <div class="qa_ans_row">
+                    <input type="radio" name="a2" valid="valid"><span>function () {}</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a2"><span>function {} ()</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a2"><span>function [] {}</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a2"><span>function {} ()</span>
+                </div>
+            </div>
+
+            <!-- Question Three -->
+            <div class="qa_set">
+                <h4>What comes befroe "Stringify"?</h4>
+                <!-- Answers -->
+                <div class="qa_ans_row">
+                    <input type="radio" name="a3"><span>JAZON</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a3"><span>JASON</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a3" valid="valid"><span>JSON</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a3" ><span>JZON</span>
+                </div>
+            </div>
+
+            <!-- Question Four -->
+            <div class="qa_set">
+                <h4>How do you create a prompt window?</h4>
+                <!-- Answers -->
+                <div class="qa_ans_row">
+                    <input type="radio" name="a4"><span>prompt('How are you?')</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a4"><span>prompt.window('How are you?')</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a4" valid="valid"><span>window.prompt('How are you?')</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a4"><span>window.prompt{'How are you?'}</span>
+                </div>
+            </div>
+
+            <!-- Question Five -->
+            <div class="qa_set">
+                <h4>How do you create a Alert window?</h4>
+                <!-- Answers -->
+                <div class="qa_ans_row">
+                    <input type="radio" name="a5"><span>alert('Hello!')</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a5" valid="valid"><span>window.alert('Hello!')</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a5"><span>alert.window('Hello!')</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a5"><span>window.alert{'Hello!'}</span>
+                </div>
+            </div>
+            <!-- Total Score -->
+            <div class="qa_set">
+                <h4>Your total Score is <span id="totalScore">0</span> out of 100</h4>
+            
+            </div>
+        </div>
+
+        <!-- Footer and Next Button -->
+        <div class="qa_footer">
+            <a href="./index.html">
+                <span class="btn1" id="home">Home</span>
+            </a>
+            <a href="./highscores.html" class="btn1">High Scores</a>
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
